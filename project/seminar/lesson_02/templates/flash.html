@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<form class="input-group mb-3" action="/flash" method="post">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}">
+            {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <input class="form-control" type="text" name="name" placeholder="Имя">
+    <input class="btn btn-outline-secondary" type="submit" value="Отправить">
+</form>
+
+{% endblock %}
