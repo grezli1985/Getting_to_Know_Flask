@@ -41,7 +41,7 @@ def html():
 
 @app.get('/students/')
 def students():
-    students = [
+    student = [
         {
             'name': 'Ivan',
             'surname': 'Ivanov',
@@ -61,12 +61,12 @@ def students():
             'avg_mark': 4.8
         }
     ]
-    return render_template('students.html', students=students)
+    return render_template('students.html', students=student)
 
 
 @app.get('/news/')
 def news():
-    news = [
+    news1 = [
         {
             'title': 'Новый 2023 Год!',
             'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, fugit.',
@@ -84,7 +84,7 @@ def news():
         },
     ]
 
-    return render_template('news.html', news=news)
+    return render_template('news.html', news=news1)
 
 
 if __name__ == '__main__':
