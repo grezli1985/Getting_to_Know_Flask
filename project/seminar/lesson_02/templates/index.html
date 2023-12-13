@@ -1,30 +1,30 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container">
-    <div class="row">
+    <div class=" m-3">
         <a href="{{ url_for('hello') }}">
-            <button class="btn btn-primary" type="submit">Приветствие</button>
+            <button class="btn btn-primary m-3" type="submit">Приветствие</button>
         </a>
         <a href="{{ url_for('upload') }}">
-            <button class="btn btn-primary" type="submit">Загрузка фото</button>
+            <button class="btn btn-primary m-3" type="submit">Загрузка фото</button>
         </a>
         <a href="{{ url_for('login') }}">
-            <button class="btn btn-primary" type="submit">Форма ввода логина и пароля</button>
+            <button class="btn btn-primary m-3" type="submit">Форма ввода логина и пароля</button>
         </a>
         <a href="{{ url_for('text') }}">
-            <button class="btn btn-primary" type="submit">Форма ввода текста</button>
+            <button class="btn btn-primary m-3" type="submit">Форма ввода текста</button>
         </a>
         <a href="{{ url_for('calc') }}">
-            <button class="btn btn-primary" type="submit">Калькулятор</button>
+            <button class="btn btn-primary m-3" type="submit">Калькулятор</button>
         </a>
         <a href="{{ url_for('check_age') }}">
-            <button class="btn btn-primary" type="submit">Проверка возраста</button>
+            <button class="btn btn-primary m-3" type="submit">Проверка возраста</button>
         </a>
         <a href="{{ url_for('redirect_to_index') }}">
-            <button class="btn btn-primary" type="submit">перенаправить</button>
+            <button class="btn btn-primary m-3" type="submit">перенаправить</button>
         </a>
         <a href="{{ url_for('_flash') }}">
-            <button class="btn btn-primary" type="submit">Flash сообщение</button>
+            <button class="btn btn-primary m-3" type="submit">Flash сообщение</button>
         </a>
     </div>
 

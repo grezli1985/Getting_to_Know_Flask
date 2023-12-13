@@ -45,9 +45,9 @@ def login():
 @app.route("/text/", methods=["GET", "POST"])
 def text():
     if request.method == "POST":
-        text = request.form.get("text")
-        if text:
-            return f"{len(text.split())}"
+        texts = request.form.get("text")
+        if texts:
+            return f"Количество слов: {len(texts.split())}"
     return render_template("text.html")
 
 
