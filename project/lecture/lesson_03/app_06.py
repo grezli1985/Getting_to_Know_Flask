@@ -17,6 +17,7 @@ def init_db():
     print("OK")
 
 
+# Создание записей
 @app.cli.command("add-john")
 def add_user():
     user = User(username='john', email='john@example.com')

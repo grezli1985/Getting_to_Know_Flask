@@ -11,12 +11,14 @@ def index():
     return "Hi!"
 
 
+
 @app.cli.command("init-db")
 def init_db():
     db.create_all()
     print("OK")
 
 
+# Создание записей
 @app.cli.command("add-john")
 def add_user():
     user = User(username='john', email='john@example.com')
@@ -25,6 +27,7 @@ def add_user():
     print('John add in DB!')
 
 
+# Изменение записей
 @app.cli.command("edit-john")
 def edit_user():
     user = User.query.filter_by(username='john').first()

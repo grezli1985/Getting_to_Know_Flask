@@ -19,7 +19,11 @@ def fill_tables():
     count = 5
 
     for number in range(1, count):
-        book = Book(title=f'book_{number}', published_year=1997 + number, copy_count=1 + number)
+        book = Book(
+            title=f'book_{number}',
+            published_year=1997 + number,
+            copy_count=1 + number
+        )
         db.session.add(book)
         db.session.commit()
 

@@ -17,6 +17,7 @@ def init_db():
     print("OK")
 
 
+# Создание записей
 @app.cli.command("add-john")
 def add_user():
     user = User(username='john', email='john@example.com')
@@ -25,6 +26,7 @@ def add_user():
     print('John add in DB!')
 
 
+# Изменение записей
 @app.cli.command("edit-john")
 def edit_user():
     user = User.query.filter_by(username='john').first()
@@ -33,6 +35,7 @@ def edit_user():
     print('Edit John mail in DB!')
 
 
+# Удаление записей
 @app.cli.command("del-john")
 def del_user():
     user = User.query.filter_by(username='john').first()
