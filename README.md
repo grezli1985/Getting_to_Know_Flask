@@ -16,3 +16,11 @@ Getting_to_Know_Flask/project/seminar
 
 
 Урок 3. Дополнительные возможности Flask
+
+    Д/З - Getting_to_Know_Flask/project/seminar/lesson_03/D_Z
+
+
+Урок 4. Введение в многозадачность
+
+    Д/З - Getting_to_Know_Flask/project/seminar/lesson_04/D_Z
+
