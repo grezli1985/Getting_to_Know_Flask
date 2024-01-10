@@ -24,3 +24,5 @@ Getting_to_Know_Flask/project/seminar
 
     Д/З - Getting_to_Know_Flask/project/seminar/lesson_04/D_Z
 
+
+Урок 5. Знакомство с FastAPI

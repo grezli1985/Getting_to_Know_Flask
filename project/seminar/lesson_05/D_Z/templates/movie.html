@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+
+    <h1>Название: {{ movies.name }}</h1>-->
+
+    {% if movies.description %}
+        Описание:
+        <div>
+            {{ movies.description }}
+        </div>
+
+        <i>Жанр: {{ movies.genre }}</i>
+    {% else %}
+        <h1> не найдена!</h1>
+    {% endif %}
+
+{% endblock %}
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <ul class="nav nav-pills justify-content-end align-items-end">
+            <li class="nav-item"><a href="/" class="nav-link">Основная</a></li>
+            <li class="nav-item"><a href="/kino/" class="nav-link">Данные</a></li>
+        </ul>
+        {% block content %}
+            <h1>КИНО</h1>
+        {% endblock %}
+        <div class="row fixed-bottom modal-footer">
+            <hr>
+            <p>Все права защищены &copy;</p>
+        </div>
+    </div>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+<!--    <a href="/"><h2>На главную</h2></a>-->
+<!--    <a href="kino"><h2>Rby</h2></a>-->
+<!--    <h1>Movie:</h1>-->
+<!--    {% for movie in movies %}-->
+<!--    <div style="background-color: rgb(180, 223, 224); margin:0.5em; padding: 0.25em; border-radius: 10px;">-->
+<!--        <p><h2>Название: {{ movie.name }}</h2></p>-->
+<!--        <p><b>title: {{ movie.title }}</b></p>-->
+<!--        {% if movie.description %}-->
+<!--        <div>-->
+<!--            Описание: {{ movie.description }}-->
+<!--        </div>-->
+<!--        {% endif %}-->
+<!--        <p><i>Жанр: {{ movie.genre }}</i></p>-->
+<!--        <a href="/movies/{{ movie.id }}"><h3>Перейти</h3></a>-->
+<!--    </div>-->
+<!--    {% endfor %}-->
+</body>
+</html>
