@@ -26,3 +26,11 @@ Getting_to_Know_Flask/project/seminar
 
 
 Урок 5. Знакомство с FastAPI
+
+    Д/З - Getting_to_Know_Flask/project/seminar/lesson_05/D_Z
+
+
+Урок 6. Дополнительные возможности FastAPI
+
+    Д/З - Getting_to_Know_Flask/project/seminar/lesson_06/D_Z
+
